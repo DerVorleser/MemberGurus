@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		3DA0C3501E5297CD002BE052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C34F1E5297CD002BE052 /* AppDelegate.swift */; };
-		3DA0C3521E5297CD002BE052 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C3511E5297CD002BE052 /* ViewController.swift */; };
+		3DA0C3521E5297CD002BE052 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C3511E5297CD002BE052 /* MainVC.swift */; };
 		3DA0C3551E5297CD002BE052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA0C3531E5297CD002BE052 /* Main.storyboard */; };
 		3DA0C3581E5297CD002BE052 /* MemberGurus.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C3561E5297CD002BE052 /* MemberGurus.xcdatamodeld */; };
 		3DA0C35A1E5297CD002BE052 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA0C3591E5297CD002BE052 /* Assets.xcassets */; };
 		3DA0C35D1E5297CD002BE052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA0C35B1E5297CD002BE052 /* LaunchScreen.storyboard */; };
 		3DA0C3681E5297CD002BE052 /* MemberGurusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C3671E5297CD002BE052 /* MemberGurusTests.swift */; };
 		3DA0C3731E5297CE002BE052 /* MemberGurusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C3721E5297CE002BE052 /* MemberGurusUITests.swift */; };
+		3DA0C3941E52AEFC002BE052 /* Member+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C38E1E52AEFC002BE052 /* Member+CoreDataClass.swift */; };
+		3DA0C3951E52AEFC002BE052 /* Member+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C38F1E52AEFC002BE052 /* Member+CoreDataProperties.swift */; };
+		3DA0C3961E52AEFC002BE052 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C3901E52AEFC002BE052 /* Image+CoreDataClass.swift */; };
+		3DA0C3971E52AEFC002BE052 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C3911E52AEFC002BE052 /* Image+CoreDataProperties.swift */; };
+		3DA0C3981E52AEFC002BE052 /* Platform+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C3921E52AEFC002BE052 /* Platform+CoreDataClass.swift */; };
+		3DA0C3991E52AEFC002BE052 /* Platform+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C3931E52AEFC002BE052 /* Platform+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +43,7 @@
 /* Begin PBXFileReference section */
 		3DA0C34C1E5297CD002BE052 /* MemberGurus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemberGurus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA0C34F1E5297CD002BE052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DA0C3511E5297CD002BE052 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DA0C3511E5297CD002BE052 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		3DA0C3541E5297CD002BE052 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DA0C3571E5297CD002BE052 /* MemberGurus.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MemberGurus.xcdatamodel; sourceTree = "<group>"; };
 		3DA0C3591E5297CD002BE052 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		3DA0C36E1E5297CE002BE052 /* MemberGurusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemberGurusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA0C3721E5297CE002BE052 /* MemberGurusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberGurusUITests.swift; sourceTree = "<group>"; };
 		3DA0C3741E5297CE002BE052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DA0C38E1E52AEFC002BE052 /* Member+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Member+CoreDataClass.swift"; path = "../Member+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3DA0C38F1E52AEFC002BE052 /* Member+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Member+CoreDataProperties.swift"; path = "../Member+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3DA0C3901E52AEFC002BE052 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image+CoreDataClass.swift"; path = "../Image+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3DA0C3911E52AEFC002BE052 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image+CoreDataProperties.swift"; path = "../Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3DA0C3921E52AEFC002BE052 /* Platform+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Platform+CoreDataClass.swift"; path = "../Platform+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3DA0C3931E52AEFC002BE052 /* Platform+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Platform+CoreDataProperties.swift"; path = "../Platform+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +111,9 @@
 		3DA0C34E1E5297CD002BE052 /* MemberGurus */ = {
 			isa = PBXGroup;
 			children = (
+				3DA0C39A1E52AF9C002BE052 /* Model */,
 				3DA0C34F1E5297CD002BE052 /* AppDelegate.swift */,
-				3DA0C3511E5297CD002BE052 /* ViewController.swift */,
+				3DA0C3511E5297CD002BE052 /* MainVC.swift */,
 				3DA0C3531E5297CD002BE052 /* Main.storyboard */,
 				3DA0C3591E5297CD002BE052 /* Assets.xcassets */,
 				3DA0C35B1E5297CD002BE052 /* LaunchScreen.storyboard */,
@@ -126,6 +139,27 @@
 				3DA0C3741E5297CE002BE052 /* Info.plist */,
 			);
 			path = MemberGurusUITests;
+			sourceTree = "<group>";
+		};
+		3DA0C39A1E52AF9C002BE052 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DA0C38E1E52AEFC002BE052 /* Member+CoreDataClass.swift */,
+				3DA0C3901E52AEFC002BE052 /* Image+CoreDataClass.swift */,
+				3DA0C3921E52AEFC002BE052 /* Platform+CoreDataClass.swift */,
+				3DA0C39B1E52AFAC002BE052 /* Generated */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3DA0C39B1E52AFAC002BE052 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				3DA0C38F1E52AEFC002BE052 /* Member+CoreDataProperties.swift */,
+				3DA0C3911E52AEFC002BE052 /* Image+CoreDataProperties.swift */,
+				3DA0C3931E52AEFC002BE052 /* Platform+CoreDataProperties.swift */,
+			);
+			name = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +296,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA0C3981E52AEFC002BE052 /* Platform+CoreDataClass.swift in Sources */,
 				3DA0C3581E5297CD002BE052 /* MemberGurus.xcdatamodeld in Sources */,
-				3DA0C3521E5297CD002BE052 /* ViewController.swift in Sources */,
+				3DA0C3941E52AEFC002BE052 /* Member+CoreDataClass.swift in Sources */,
+				3DA0C3991E52AEFC002BE052 /* Platform+CoreDataProperties.swift in Sources */,
+				3DA0C3521E5297CD002BE052 /* MainVC.swift in Sources */,
+				3DA0C3961E52AEFC002BE052 /* Image+CoreDataClass.swift in Sources */,
 				3DA0C3501E5297CD002BE052 /* AppDelegate.swift in Sources */,
+				3DA0C3951E52AEFC002BE052 /* Member+CoreDataProperties.swift in Sources */,
+				3DA0C3971E52AEFC002BE052 /* Image+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
