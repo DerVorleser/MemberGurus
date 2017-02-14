@@ -23,6 +23,9 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         tableView.delegate = self
         tableView.dataSource = self
         
+        generateTestData()
+        attemptFetch()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -72,6 +75,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         
+        self.controller = controller
+        
         do {
             try controller.performFetch()
         } catch {
@@ -118,6 +123,32 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         }
     }
 
+    func generateTestData(){
+        let member1 = Member(context: context)
+        member1.name = "James"
+        member1.age = 23
+        //member1.plat
+        
+        let member2 = Member(context: context)
+        member2.name = "Michael"
+        member2.age = 25
+        
+        let member3 = Member(context: context)
+        member3.name = "Yolo"
+        member3.age = 25
+        
+        let member4 = Member(context: context)
+        member4.name = "Jessie"
+        member4.age = 21
+        
+        let member5 = Member(context: context)
+        member5.name = "Lisa"
+        member5.age = 33
+        
+        let member6 = Member(context: context)
+        member6.name = "Steph"
+        member6.age = 24
+    }
 
 }
 

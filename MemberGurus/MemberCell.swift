@@ -18,7 +18,7 @@ class MemberCell: UITableViewCell {
     func configureCell(member: Member) {
         name.text = member.name
         age.text = "$\(member.age)"
-        //platform.text = "$\(member.created)"
+        //platform.text = member.platform
         
     }
     
