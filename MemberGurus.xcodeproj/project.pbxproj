@@ -21,6 +21,9 @@
 		3DA0C3971E52AEFC002BE052 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C3911E52AEFC002BE052 /* Image+CoreDataProperties.swift */; };
 		3DA0C3981E52AEFC002BE052 /* Platform+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C3921E52AEFC002BE052 /* Platform+CoreDataClass.swift */; };
 		3DA0C3991E52AEFC002BE052 /* Platform+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C3931E52AEFC002BE052 /* Platform+CoreDataProperties.swift */; };
+		3DA0C39D1E52C387002BE052 /* Tien.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA0C39C1E52C387002BE052 /* Tien.png */; };
+		3DA0C3A01E52C41D002BE052 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C39F1E52C41D002BE052 /* MaterialView.swift */; };
+		3DA0C3A21E52D9F5002BE052 /* MemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C3A11E52D9F5002BE052 /* MemberCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		3DA0C3911E52AEFC002BE052 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image+CoreDataProperties.swift"; path = "../Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3DA0C3921E52AEFC002BE052 /* Platform+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Platform+CoreDataClass.swift"; path = "../Platform+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3DA0C3931E52AEFC002BE052 /* Platform+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Platform+CoreDataProperties.swift"; path = "../Platform+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3DA0C39C1E52C387002BE052 /* Tien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tien.png; sourceTree = "<group>"; };
+		3DA0C39F1E52C41D002BE052 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		3DA0C3A11E52D9F5002BE052 /* MemberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,11 +117,13 @@
 		3DA0C34E1E5297CD002BE052 /* MemberGurus */ = {
 			isa = PBXGroup;
 			children = (
+				3DA0C39E1E52C3F7002BE052 /* View */,
 				3DA0C39A1E52AF9C002BE052 /* Model */,
 				3DA0C34F1E5297CD002BE052 /* AppDelegate.swift */,
 				3DA0C3511E5297CD002BE052 /* MainVC.swift */,
 				3DA0C3531E5297CD002BE052 /* Main.storyboard */,
 				3DA0C3591E5297CD002BE052 /* Assets.xcassets */,
+				3DA0C39C1E52C387002BE052 /* Tien.png */,
 				3DA0C35B1E5297CD002BE052 /* LaunchScreen.storyboard */,
 				3DA0C35E1E5297CD002BE052 /* Info.plist */,
 				3DA0C3561E5297CD002BE052 /* MemberGurus.xcdatamodeld */,
@@ -160,6 +168,15 @@
 				3DA0C3931E52AEFC002BE052 /* Platform+CoreDataProperties.swift */,
 			);
 			name = Generated;
+			sourceTree = "<group>";
+		};
+		3DA0C39E1E52C3F7002BE052 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DA0C39F1E52C41D002BE052 /* MaterialView.swift */,
+				3DA0C3A11E52D9F5002BE052 /* MemberCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +289,7 @@
 				3DA0C35D1E5297CD002BE052 /* LaunchScreen.storyboard in Resources */,
 				3DA0C35A1E5297CD002BE052 /* Assets.xcassets in Resources */,
 				3DA0C3551E5297CD002BE052 /* Main.storyboard in Resources */,
+				3DA0C39D1E52C387002BE052 /* Tien.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA0C3A21E52D9F5002BE052 /* MemberCell.swift in Sources */,
 				3DA0C3981E52AEFC002BE052 /* Platform+CoreDataClass.swift in Sources */,
 				3DA0C3581E5297CD002BE052 /* MemberGurus.xcdatamodeld in Sources */,
 				3DA0C3941E52AEFC002BE052 /* Member+CoreDataClass.swift in Sources */,
@@ -303,6 +322,7 @@
 				3DA0C3521E5297CD002BE052 /* MainVC.swift in Sources */,
 				3DA0C3961E52AEFC002BE052 /* Image+CoreDataClass.swift in Sources */,
 				3DA0C3501E5297CD002BE052 /* AppDelegate.swift in Sources */,
+				3DA0C3A01E52C41D002BE052 /* MaterialView.swift in Sources */,
 				3DA0C3951E52AEFC002BE052 /* Member+CoreDataProperties.swift in Sources */,
 				3DA0C3971E52AEFC002BE052 /* Image+CoreDataProperties.swift in Sources */,
 			);
