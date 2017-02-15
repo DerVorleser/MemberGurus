@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D67ACA51E533F3D001EE7DA /* MemberDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D67ACA41E533F3D001EE7DA /* MemberDetailsVC.swift */; };
 		3DA0C3501E5297CD002BE052 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C34F1E5297CD002BE052 /* AppDelegate.swift */; };
 		3DA0C3521E5297CD002BE052 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C3511E5297CD002BE052 /* MainVC.swift */; };
 		3DA0C3551E5297CD002BE052 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA0C3531E5297CD002BE052 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		3DA0C39D1E52C387002BE052 /* Tien.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA0C39C1E52C387002BE052 /* Tien.png */; };
 		3DA0C3A01E52C41D002BE052 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C39F1E52C41D002BE052 /* MaterialView.swift */; };
 		3DA0C3A21E52D9F5002BE052 /* MemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA0C3A11E52D9F5002BE052 /* MemberCell.swift */; };
+		3DDF5F881E54676F001598AF /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DDF5F871E54676F001598AF /* View.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D67ACA41E533F3D001EE7DA /* MemberDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberDetailsVC.swift; sourceTree = "<group>"; };
 		3DA0C34C1E5297CD002BE052 /* MemberGurus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemberGurus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA0C34F1E5297CD002BE052 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DA0C3511E5297CD002BE052 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 		3DA0C39C1E52C387002BE052 /* Tien.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tien.png; sourceTree = "<group>"; };
 		3DA0C39F1E52C41D002BE052 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		3DA0C3A11E52D9F5002BE052 /* MemberCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberCell.swift; sourceTree = "<group>"; };
+		3DDF5F871E54676F001598AF /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D67ACA31E533CA2001EE7DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3DA0C3511E5297CD002BE052 /* MainVC.swift */,
+				3D67ACA41E533F3D001EE7DA /* MemberDetailsVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		3DA0C3431E5297CD002BE052 = {
 			isa = PBXGroup;
 			children = (
@@ -120,8 +133,9 @@
 				3DA0C39E1E52C3F7002BE052 /* View */,
 				3DA0C39A1E52AF9C002BE052 /* Model */,
 				3DA0C34F1E5297CD002BE052 /* AppDelegate.swift */,
-				3DA0C3511E5297CD002BE052 /* MainVC.swift */,
+				3D67ACA31E533CA2001EE7DA /* Controller */,
 				3DA0C3531E5297CD002BE052 /* Main.storyboard */,
+				3DDF5F871E54676F001598AF /* View.xib */,
 				3DA0C3591E5297CD002BE052 /* Assets.xcassets */,
 				3DA0C39C1E52C387002BE052 /* Tien.png */,
 				3DA0C35B1E5297CD002BE052 /* LaunchScreen.storyboard */,
@@ -287,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DA0C35D1E5297CD002BE052 /* LaunchScreen.storyboard in Resources */,
+				3DDF5F881E54676F001598AF /* View.xib in Resources */,
 				3DA0C35A1E5297CD002BE052 /* Assets.xcassets in Resources */,
 				3DA0C3551E5297CD002BE052 /* Main.storyboard in Resources */,
 				3DA0C39D1E52C387002BE052 /* Tien.png in Resources */,
@@ -322,6 +337,7 @@
 				3DA0C3521E5297CD002BE052 /* MainVC.swift in Sources */,
 				3DA0C3961E52AEFC002BE052 /* Image+CoreDataClass.swift in Sources */,
 				3DA0C3501E5297CD002BE052 /* AppDelegate.swift in Sources */,
+				3D67ACA51E533F3D001EE7DA /* MemberDetailsVC.swift in Sources */,
 				3DA0C3A01E52C41D002BE052 /* MaterialView.swift in Sources */,
 				3DA0C3951E52AEFC002BE052 /* Member+CoreDataProperties.swift in Sources */,
 				3DA0C3971E52AEFC002BE052 /* Image+CoreDataProperties.swift in Sources */,
@@ -571,6 +587,7 @@
 				3DA0C3791E5297CE002BE052 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DA0C37A1E5297CE002BE052 /* Build configuration list for PBXNativeTarget "MemberGurusTests" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +596,7 @@
 				3DA0C37C1E5297CE002BE052 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DA0C37D1E5297CE002BE052 /* Build configuration list for PBXNativeTarget "MemberGurusUITests" */ = {
 			isa = XCConfigurationList;
@@ -587,6 +605,7 @@
 				3DA0C37F1E5297CE002BE052 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

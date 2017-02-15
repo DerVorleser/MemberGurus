@@ -17,7 +17,7 @@ class MemberCell: UITableViewCell {
     
     func configureCell(member: Member) {
         name.text = member.name
-        age.text = "$\(member.age)"
+        age.text = "Age: \(member.age)"
         //platform.text = member.platform
         
     }
