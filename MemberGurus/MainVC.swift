@@ -43,7 +43,28 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         cell.configureCell(member: member)
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let objs = controller.fetchedObjects, objs.count > 0{
+            
+            let member = objs[indexPath.row] //in progress
+            performSegue(withIdentifier: "MemberDetailsVC", sender: member)
+        }
+    }
     
+    /*
+     ask xcode to perform a segue
+     data passing between scenes (i.e. view controllers) with segue
+     */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "MemberDetailsVC"{
+            if let destination = segue.destination as? MemberDetailsVC {
+                if let member = sender as? Member {
+                    destination.memberToEdit = member
+                }
+            }
+        
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let sections = controller.sections{

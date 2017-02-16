@@ -39,7 +39,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MemberCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="MemberCell" rowHeight="158" id="6xa-hc-0Cm" customClass="MemberCell" customModule="MemberGurus" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MemberCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="MemberCell" rowHeight="158" id="6xa-hc-0Cm" customClass="MemberCell" customModule="MemberGurus" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="158"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6xa-hc-0Cm" id="mdo-hI-CFz">
@@ -49,7 +49,7 @@
                                                 <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JKZ-zK-tCh">
                                                     <rect key="frame" x="8" y="7" width="327" height="142"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Tien.png" translatesAutoresizingMaskIntoConstraints="NO" id="EPH-0S-05M">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="flower" translatesAutoresizingMaskIntoConstraints="NO" id="EPH-0S-05M">
                                                             <rect key="frame" x="8" y="8" width="100" height="126"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="100" id="GPI-NK-BX5"/>
@@ -144,7 +144,7 @@
                     <connections>
                         <outlet property="segment" destination="QqW-wC-rM3" id="iz8-R1-p3g"/>
                         <outlet property="tableView" destination="fvz-k9-Xbs" id="LQD-GT-Zqn"/>
-                        <segue destination="Rb5-LR-T74" kind="show" id="HP1-sp-V7n"/>
+                        <segue destination="Rb5-LR-T74" kind="show" identifier="MemberDetailsVC" id="HP1-sp-V7n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -229,6 +229,9 @@
                     <navigationItem key="navigationItem" title="Title" id="MGX-x6-S8x">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="FXY-Im-3bg">
                             <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="deletePressed:" destination="Rb5-LR-T74" id="rPI-gw-NUk"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -247,7 +250,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hFr-h6-UhA" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="M6h-zy-NTd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M6h-zy-NTd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -267,7 +270,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Tien.png" width="204" height="184"/>
+        <image name="flower" width="331" height="329"/>
         <image name="radar" width="328" height="330"/>
     </resources>
     <inferredMetricsTieBreakers>

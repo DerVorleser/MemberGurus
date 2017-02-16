@@ -23,6 +23,8 @@ class MemberDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDel
     
 
     var platforms = [Platform]()
+    var memberToEdit: Member?
+
     
 
     override func viewDidLoad() {
@@ -48,6 +50,10 @@ class MemberDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDel
         
         getPlatform()
 
+        if memberToEdit != nil{
+            loadMemberData()
+            
+        }
         
     }
     
@@ -80,22 +86,75 @@ class MemberDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDel
     }
 
     @IBAction func savePressed(_ sender: UIButton) {
-        let member = Member(context: context)
+        //let member = Member(context: context) //creating new Member and that's not the indication we need
+        
+        var isValidated: Bool = false
+        
+        var member: Member!
+        
+        //validation the user input
+        let alert = UIAlertController(title: "Input error", message: "The input is empty", preferredStyle: UIAlertControllerStyle.alert)
+        
+        
+        
+        if nameTextField.text == "" || ageTextField.text == "" {
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+            
+        } else {
+            isValidated = true
+        }
+        
+    
+        if memberToEdit == nil {
+            member = Member(context: context)
+        
+        } else {
+            member = memberToEdit
+        }
+        
         
         if let name = nameTextField.text{
             member.name = name
         }
-        
+        //converting steps
         if let age = ageTextField.text{
             member.age = Int16((age as NSString).intValue)
         }
         
         //member.toPlatform = platforms[platformPicker.selectedRow(inComponent: 0)]
         
-        ad.saveContext()
+        if isValidated == true {
+            ad.saveContext()
+            
+            _ = navigationController?.popViewController(animated: true)
+            
+        }
+        
+
+    }
+    
+    func loadMemberData(){
+        
+        if let member = memberToEdit{
+            nameTextField.text = member.name
+            ageTextField.text = "\(member.age)"
+            
+            
+        }
+        
+    }
+    
+    @IBAction func deletePressed(_ sender: UIBarButtonItem) {
+        if memberToEdit != nil {
+            context.delete(memberToEdit!)
+            ad.saveContext()
+        }
         
         _ = navigationController?.popViewController(animated: true)
     }
+
 
     
 
